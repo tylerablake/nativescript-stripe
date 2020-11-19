@@ -1,31 +1,33 @@
-
 {
-  "compilerOptions"       : {
-    "target"                : "es2017",
-    "module"                : "esnext",
-    "moduleResolution"      : "node",
-    "sourceMap"             : true,
-    "emitDecoratorMetadata" : true,
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "noImplicitUseStrict"   : true,
-    "noEmitHelpers"         : true,
-    "declaration"           : true,
-    "removeComments"        : true,
-    "noEmitOnError"         : true,
-    "skipLibCheck"          : true,
-    "skipDefaultLibCheck"   : true,
-    "noImplicitAny"         : false,
-    "lib"                   : [
+    "noImplicitUseStrict": true,
+    "noEmitHelpers": true,
+    "declaration": true,
+    "removeComments": true,
+    "noEmitOnError": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "noImplicitAny": false,
+    "lib": [
       "es2017",
       "dom",
       "es6"
     ],
-    "baseUrl"               : ".",
+    "baseUrl": ".",
     "plugins": [
-      { "transform": "@nativescript/webpack/transformers/ns-transform-native-classes", "type": "raw" }
+      {
+        "transform": "@nativescript/webpack/transformers/ns-transform-native-classes",
+        "type": "raw"
+      }
     ]
   },
-  "exclude"               : [
+  "exclude": [
     "node_modules"
   ]
 }
